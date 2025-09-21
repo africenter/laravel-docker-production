@@ -9,7 +9,7 @@ services:
     depends_on:
       - db
     env_file:
-      - ./backend/.env
+      - .env
     volumes:
       - storage:/usr/share/nginx/html/storage:rw
       - public:/usr/share/nginx/html/public:rw
